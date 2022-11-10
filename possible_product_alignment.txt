@@ -1,0 +1,5 @@
+"<p id='items'>"+"<img src='" + products[i].img + "'>"+'<b>' +products[i].name + '</b>' +
+                        "<br>&emsp;Department: " + products[i].dept +
+                        "<br>&emsp;Price: " + products[i].price +
+                        "<br>&emsp;Qty in Stock: " + products[i].qty +
+                    "</p>"   
