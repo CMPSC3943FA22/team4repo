@@ -185,17 +185,6 @@ $(function(){
         }
         
     ];
-
-    let quotes = [
-        {
-            "quote": "I love spending my time at Rusty's!",
-            "name": "Diana King"
-        },
-        {
-            "quote": "I can get in and out, no problem!",
-            "name": "John Smith"
-        }
-    ]
     //Product Search Functionality
     $("#sub").on("click", function(){
         $("#resultList").empty();
@@ -294,12 +283,7 @@ $(function(){
         }
     }
   })
-//   $("#quotes").on("click", function(){
-//     for(let i in quotes){
-//         console.log(quotes[i].quote);
-//     }    
 
-//   })
 
 
 
