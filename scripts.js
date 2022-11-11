@@ -1,5 +1,6 @@
 $(function(){
     let shoppingList = [];
+    let resultList =[];
     let products = [
         {
             "name" : "Apples",
@@ -200,21 +201,59 @@ $(function(){
     $("#sub").on("click", function(){
         $("#result").empty();
         let search = $("#search").val();
-        
+        //had to add a variable for the addList ID to allow the click events to register and record value properly
+        //to format in css #prodInfo button {}
+        let j =0;
         for(let i in products){
-            if(products[i].name.toLowerCase().includes(search.toLowerCase())){
+            
+            let d = $("#dep").val();
+        
+            if(products[i].name.toLowerCase().includes(search.toLowerCase()) && products[i].dept == d){
+                //search bar and dept selected
                 $("#result").append(
                     "<div id='prodDisp'>" +
                     "<img src='" + products[i].img + "' id='prodImg'>" + 
-                        '<div id="prodInfo">' +
+                        '<div id=prodInfo">' +
                             "<p id='prodName'>&emsp;" + products[i].name + "</p>" +
                             "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
                             "<p id='prodPric'>&emsp;Price: " + products[i].price + "</p>" +
                             "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
+                            "<button id='addList"+j+"' value='' >Add to Shopping List</button>" +
                         "</div>" +
                     "</div>"
                     );
+                    //adds button that pushes that item to shopping list
+                $('#addList' + j).on('click', event => {
+                    let n = products[i].name;
+                    shoppingList.push(n);
+                    
+                    
+                })
+                // j++;
+                    
+            } else if(products[i].name.toLowerCase().includes(search.toLowerCase()) && d == ""){
+                //search bar and dept can be blank-will show everything in obj
+                $("#result").append(
+                    "<div id='prodDisp'>" +
+                    "<img src='" + products[i].img + "' id='prodImg'>" + 
+                        '<div id=prodInfo">' +
+                            "<p id='prodName'>&emsp;" + products[i].name + "</p>" +
+                            "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
+                            "<p id='prodPric'>&emsp;Price: " + products[i].price + "</p>" +
+                            "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
+                            "<button id='addList"+j+"' value='' >Add to Shopping List</button>" +
+                        "</div>" +
+                    "</div>"
+                    );
+                    //adds button that pushes that item to shopping list
+                $('#addList' + j).on('click', event => {
+                    let n = products[i].name;
+                    shoppingList.push(n);
+                    
+                    
+                })
             }
+            j++;
         }
         if($("#result").length == 0){
             $("#resultList").append(
@@ -226,104 +265,18 @@ $(function(){
     })
   
 
-  //Department Search Functionality
-  $("#meat").on("click", function(){
-    $("#departmentResult").empty();
-    for(let i in products){
-        if(products[i].dept.includes("Meat")){
-            $("#departmentResult").append(
-                "<div id='prodDisp'>" +
-                    "<img src='" + products[i].img + "' id='prodImg'>" + 
-                        '<div id="prodInfo">' +
-                            "<p id='prodName'>&emsp;" + products[i].name + "</p>" +
-                            "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
-                            "<p id='prodPric'>&emsp;Price: " + products[i].price + "</p>" +
-                            "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
-                        "</div>" +
-                "</div>"
-            )
-            
-        }
-    }
-  })
-  $("#home").on("click", function(){
-    $("#departmentResult").empty();
-    for(let i in products){
-        if(products[i].dept.includes("Home")){
-            $("#departmentResult").append(
-                "<div id='prodDisp'>" +
-                    "<img src='" + products[i].img + "' id='prodImg'>" + 
-                        '<div id="prodInfo">' +
-                            "<p id='prodName'>&emsp;" + products[i].name + "</p>" +
-                            "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
-                            "<p id='prodPric'>&emsp;Price: " + products[i].price + "</p>" +
-                            "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
-                        "</div>" +
-                "</div>"
-            )
-            
-        }
-    }
-  })
-  $("#dairy").on("click", function(){
-    $("#departmentResult").empty();
-    for(let i in products){
-        if(products[i].dept.includes("Dairy")){
-            $("#departmentResult").append(
-                "<div id='prodDisp'>" +
-                    "<img src='" + products[i].img + "' id='prodImg'>" + 
-                        '<div id="prodInfo">' +
-                            "<p id='prodName'>&emsp;" + products[i].name + "</p>" +
-                            "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
-                            "<p id='prodPric'>&emsp;Price: " + products[i].price + "</p>" +
-                            "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
-                        "</div>" +
-                "</div>"
-            )
-            
-        }
-    }
-  })
-  $("#frozen").on("click", function(){
-    $("#departmentResult").empty();
-    for(let i in products){
-        if(products[i].dept.includes("Frozen")){
-            $("#departmentResult").append(
-                "<div id='prodDisp'>" +
-                    "<img src='" + products[i].img + "' id='prodImg'>" + 
-                        '<div id="prodInfo">' +
-                            "<p id='prodName'>&emsp;" + products[i].name + "</p>" +
-                            "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
-                            "<p id='prodPric'>&emsp;Price: " + products[i].price + "</p>" +
-                            "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
-                        "</div>" +
-                "</div>"
-            )
-            
-        }
-    }
-  })
-  $("#produce").on("click", function(){
-    $("#departmentResult").empty();
-    for(let i in products){
-        if(products[i].dept.includes("Produce")){
-            $("#departmentResult").append(
-                "<div id='prodDisp'>" +
-                    "<img src='" + products[i].img + "' id='prodImg'>" + 
-                        '<div id="prodInfo">' +
-                            "<p id='prodName'>&emsp;" + products[i].name + "</p>" +
-                            "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
-                            "<p id='prodPric'>&emsp;Price: " + products[i].price + "</p>" +
-                            "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
-                        "</div>" +
-                "</div>"
-            )
-            
-        }
-    }
-  })
 
-
+//show shopping list array
+  $("#showList").on("click",function(){
+    $("#shopList").empty();
+    for(let i of shoppingList){
+        console.log(i);
+        $('#shopList').append(
+            "<li>" + i +"</li>"
+        )
+        
+    }
+  })
 
 
 
