@@ -21,17 +21,25 @@
     </main>
     <div id="search-bar">
         <input type="text" placeholder="search for an item" id="search">
+        <select id='dep' name="dep">
+            <option value="">Pick a department</option>
+            <option value="Meat">Meat</option>
+            <option value="Dairy">Dairy</option>
+        </select>
         <button id="sub">Search</button>
     </div>
-    <div id="result">
-        <ul id="resultList">
+    <button id="showList">Show Shopping list</button>
+    <div>
+        <ul id="shopList">
 
         </ul>
     </div>
-        <ul></ul>
-    <div id="shopList">
+    <div id="result">
         
     </div>
+        <ul></ul>
+    
+    
     <a href="departments.html" id="deptSearch">Search By Department</a>
     <p>Test site. Will find items that contain search result<br>Example search "a" or "milk". Contain temp test images
     <br>Search again will delete results and allow new search, otherwise new search will append to the bottom of previous search</p>
