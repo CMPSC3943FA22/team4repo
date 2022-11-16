@@ -1,5 +1,21 @@
-body{
+/* --- Site-Wide --- */
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #1d1d1d;
+    width: 100%;
+    height: 100%;
+    padding: 0;
     margin: 0 ;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
 }
 
 img {
@@ -8,15 +24,276 @@ img {
     
 }
 
-main{
+/* --- Navigation Bar CSS --- */
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-bottom-color: #49cc49;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+
+nav li{
+    float: left;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav li a:hover{
+    background-color: #49cc49;
+}
+
+
+
+/* --- Home Page CSS --- */
+
+ /* Home Intro */
+
+#home .intro {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+#rustys-logo{
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 260px;
+    border: none;
+    padding: 2px;
+}
+
+ /* -- Featured Items -- */
+
+#home .trending {
+    width: 100%;
+    height: auto;
+}
+
+#home .trending-header {
+    width: 90%;
+    padding: 20px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#home .trending-header button{
+    text-align: left;
+    margin-top: 24px;
+}
+
+#home #trendingitemslist {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    display: inline;
+    float: left;
+}
+
+/* Trending Items Product Display */
+
+#home #trendingitemslist #prodDisp {
+    width: 180px;
+    height: 280px;
+    display: block;
+    border: none;
+    float: left;
+    padding: 10px;
+}
+#home #trendingitemslist #picWrap {
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 20px white;
+    width: 180px;
+    height: 50%;
     display: flex;
     justify-content: center;
 }
 
-#rustys-logo{
-    height: 150px;
-    width: 150px;
+#home #trendingitemslist #prodImg {
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 160px;
+    max-height: 160px;
+    border: none;
+    padding: 2px;
 }
+
+ /* -- All Items -- */
+
+#home .allitems {
+    width: 100%;
+    height: 900px;
+}
+
+#home .allitems-header {
+    width: 90%;
+    padding: 20px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#home .allitems-header button{
+    text-align: left;
+    margin-top: 24px;
+}
+
+#home #itemslist {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    display: inline;
+    float: left;
+}
+
+/* All Items Product Display */
+
+#home #itemslist #prodDisp {
+    width: 180px;
+    height: 280px;
+    display: block;
+    border: none;
+    float: left;
+    padding: 10px;
+}
+#home #itemslist #picWrap {
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 20px white;
+    width: 180px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#home #itemslist #prodImg {
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 160px;
+    max-height: 160px;
+    border: none;
+    padding: 2px;
+}
+
+#home #prodInfo {
+    height: 50%;
+    position: absolute;
+    margin-left: 20px;
+
+}
+
+#home #prodName {
+    color: #49cc49;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top:10px;
+}
+
+#home #prodDept {
+    color: #BBB;
+    font-size: 14px;
+    position: absolute;
+    margin-top:32px ;
+}
+
+#home #prodPric {
+    font-size: 18px;
+    position: absolute;
+    margin-top:50px ;
+}
+
+#home #prodQty {
+
+}
+
+#home button {
+    position: absolute;
+    margin-top:80px;
+}
+
+/* -- Other Home Styles -- */
+
+#home button {
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    background-color: #333;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+#home button:hover {
+    background-color: #49cc49;
+}
+
+/* Divider */
+#divider
+{
+    overflow:hidden;
+    height: 5px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+#divider-gradient
+{
+    overflow:hidden;
+    margin-right:20%;
+    margin-left: -700px;
+    height:2px;
+    margin-top: -10px;
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(240,240,240,1) 0%, rgba(242,242,242,1) 19%, rgba(252,252,252,0) 80%, rgba(254,254,254,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(10,10,10,1)), color-stop(19%,rgba(8,8,8,1)), color-stop(80%,rgba(3,3,3,0)), color-stop(100%,rgba(1,1,1,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(240,240,240,1) 0%,#49cc49 19%,rgba(252,252,252,0) 80%,rgba(254,254,254,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(240,240,240,1) 0%, rgba(242,242,242,1) 19%, rgba(252,252,252,0) 80%, rgba(254,254,254,0) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(240,240,240,1) 0%, rgba(242,242,242,1) 19%, rgba(252,252,252,0) 80%, rgba(254,254,254,0) 100%); /* IE10+ */
+    background: radial-gradient(center, ellipse cover,  rgba(240,240,240,1) 0%, rgba(242,242,242,1) 19%, rgba(252,252,252,0) 80%, rgba(254,254,254,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#00010101',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* Container */
+.container {
+    display: inline-flex;
+    height: 225px;
+    width: 175px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.template {
+    height: 225px;
+    width: 175px;
+    border: #999;
+    border-style:solid;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+/* --- Product Search Page ---*/
 
 #search-bar {
     display: flex;
@@ -37,12 +314,6 @@ main{
 
 #sub {
     border-radius: 20px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* Result div CSS */
@@ -91,29 +362,6 @@ main {
 #searchAgain button:hover{
     background-color: #111;
     color: white;
-}
-/* Navbar CSS */
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333
-}
-
-nav li{
-    float: left;
-}
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav li a:hover{
-    background-color: #111;
 }
 
 /* Items display */
