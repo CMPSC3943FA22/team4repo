@@ -197,7 +197,9 @@ $(function(){
             "name": "John Smith"
         }
     ]
-    //Product Search Functionality
+    
+    
+    // --- Product Search Functionality
     $("#sub").on("click", function(){
         $("#result").empty();
         let search = $("#search").val();
@@ -266,18 +268,66 @@ $(function(){
   
 
 
-//show shopping list array
-  $("#showList").on("click",function(){
-    $("#shopList").empty();
-    for(let i of shoppingList){
-        console.log(i);
-        $('#shopList').append(
-            "<li>" + i +"</li>"
-        )
-        
-    }
-  })
+    //--- Show shopping list array
+    $("#showList").on("click",function(){
+        $("#shopList").empty();
+        for(let i of shoppingList){
+            console.log(i);
+            $('#shopList').append(
+                "<li>" + i +"</li>"
+            )
+        }
+    })
 
+    
+    // --- Home Page ---
 
+    // --- Adds items to "Featured Items" and "All Items" fields on the home page.
+    $(function addHomeScreenItems(){
+        $("#trendingitemslist").empty();
+        $("#itemslist").empty();
+        let j = 0;
+        let noOfTrendingItems = 0;
+        for(let i in products){
+            if (products[i].qty != 0) {
+                $("#itemslist").append(
+                    "<div id='prodDisp'>" +
+                        "<div id='picWrap'>" +
+                            "<img id='prodImg' src='" + products[i].img + "'>" + 
+                        "</div>" +
+                        '<div id=prodInfo">' +
+                            "<p id='prodName'>" + products[i].name + "</p>" +
+                            "<p id='prodDept'>" +products[i].dept + "</p>" +
+                            "<p id='prodPric'>$" + products[i].price + "</p>" +
+                            "<button id='addList"+j+"' value='' ><i class='fa fa-cart-plus'></i></button>" +
+                        "</div>" +
+                    "</div>"
+                    );
 
+                    // Adds items to trending items list - no more than 6
+                    if (products[i].trending == "true" && noOfTrendingItems != 6) {
+                        $("#trendingitemslist").append(
+                            "<div id='prodDisp'>" +
+                                "<div id='picWrap'>" +
+                                    "<img id='prodImg' src='" + products[i].img + "'>" + 
+                                "</div>" +
+                                '<div id=prodInfo">' +
+                                    "<p id='prodName'>" + products[i].name + "</p>" +
+                                    "<p id='prodDept'>" +products[i].dept + "</p>" +
+                                    "<p id='prodPric'>$" + products[i].price + "</p>" +
+                                    "<button id='addList"+j+"' value='' ><i class='fa fa-cart-plus'></i></button>" +
+                                "</div>" +
+                            "</div>"
+                            );
+                            noOfTrendingItems++;
+                    }
+                    //adds button that pushes that item to shopping list
+                $('#addList' + j).on('click', event => {
+                    let n = products[i].name;
+                    shoppingList.push(n); 
+                })
+            }
+        }
+        j++;
+    });
 })
