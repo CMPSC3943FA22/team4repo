@@ -239,7 +239,7 @@ $(function(){
                         '<div id=prodInfo">' +
                             "<p id='prodName'>&emsp;" + products[i].name + "</p>" +
                             "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
-                            "<p id='prodPric'>&emsp;Price: " + products[i].price + "</p>" +
+                            "<p id='prodPric'>&emsp;Price: $" + products[i].price + "</p>" +
                             "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
                             "<button id='addList"+j+"' value='' >Add to Shopping List</button>" +
                         "</div>" +
