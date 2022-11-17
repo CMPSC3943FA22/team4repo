@@ -299,7 +299,6 @@ nav li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
 }
 
 #search {
@@ -374,7 +373,7 @@ nav li a:hover{
     flex-direction: column;
     justify-content: flex-start;
     
-    
+    border: 1px solid black;
 } 
 
 #prodDisp{
@@ -384,8 +383,7 @@ nav li a:hover{
 }
 
 #prodDisp #prodImg{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border: 1px solid red;
     height: 200px;
     width: 200px;
 }
@@ -394,41 +392,16 @@ nav li a:hover{
     flex-direction: column;
 }
 
-#prodName {
-    margin-left: 10px;
-    color:white;
-    text-decoration: underline;
-}
-
-#prodDisp button{
-    margin: 0 0 15px 15px;
-    background-color: #1d1d1d;
-    border: none;
-}
-
-#prodDisp button:active{
-    background-color: rgb(24, 78, 38);
-}
-
-#prodDisp button img{
-    height: 30px;
-    width: 30px;
-    
-    
+#prodName{
+    color:blue
 }
 
 #addList {
     margin: 10px;
-    
 }
 
 #dep {
     margin: 10px;
-}
-
-#showListButton{
-    display: flex;
-    justify-content: center;
 }
 
 #sub {
