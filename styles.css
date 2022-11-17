@@ -886,3 +886,40 @@ nav li a:hover{
     font-weight: bold;
 }
 
+#contact{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#storeEmail{
+    width: 30%;
+    border: 1px solid #49cc49;
+}
+
+
+#storePhone{
+    width: 30%;
+    border: 1px solid #49cc49;
+    text-align: center;
+}
+
+#storeAddress{
+    width: 30%;
+    border: 1px solid #49cc49;
+    text-align: center;
+}
+
+#message{
+    margin: 20px;
+}
+
+#commentSubmit{
+    margin-left: 20px;
+}
+
+#thanks{
+    display: flex;
+    justify-content: center;
+}
