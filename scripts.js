@@ -1,6 +1,5 @@
 $(function(){
     let shoppingList = [];
-    let resultList =[];
     let products = [
         {
             "name" : "Apples",
@@ -222,8 +221,8 @@ $(function(){
             "name": "John Smith"
         }
     ]
-    
-    
+   
+   
     // --- Product Search Functionality
     $("#sub").on("click", function(){
         $("#result").empty();
@@ -241,14 +240,16 @@ $(function(){
                     "<div id='prodDisp'>" +
                     "<img src='" + products[i].img + "' id='prodImg'>" + 
                         '<div id=prodInfo">' +
-                            "<p id='prodName'>&emsp;" + products[i].name + "</p>" +
+                            "<h4 id='prodName'>" + products[i].name + "</h4>" +
                             "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
                             "<p id='prodPric'>&emsp;Price: " + products[i].price + "</p>" +
                             "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
-                            "<button id='addList"+j+"' value='' >Add to Shopping List</button>" +
+                            "<button id='addList"+j+"' value='' ><img id='addListImg' src='/imgs/plus.png'></button>" +
                         "</div>" +
                     "</div>"
+                   
                     );
+                    
                     //adds button that pushes that item to shopping list
                 $('#addList' + j).on('click', event => {
                     let n = products[i].name;
@@ -256,7 +257,7 @@ $(function(){
                     
                     
                 })
-                // j++;
+                
                     
             } else if(products[i].name.toLowerCase().includes(search.toLowerCase()) && d == ""){
                 //search bar and dept can be blank-will show everything in obj
@@ -264,11 +265,11 @@ $(function(){
                     "<div id='prodDisp'>" +
                     "<img src='" + products[i].img + "' id='prodImg'>" + 
                         '<div id=prodInfo">' +
-                            "<p id='prodName'>&emsp;" + products[i].name + "</p>" +
+                        "<h4 id='prodName'>" + products[i].name + "</h4>" +
                             "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
                             "<p id='prodPric'>&emsp;Price: $" + products[i].price + "</p>" +
                             "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
-                            "<button id='addList"+j+"' value='' >Add to Shopping List</button>" +
+                            "<button id='addList"+j+"' value='' ><img src='/imgs/plus.png'></button>" +
                         "</div>" +
                     "</div>"
                     );
@@ -355,4 +356,5 @@ $(function(){
         }
         j++;
     });
+    
 })
