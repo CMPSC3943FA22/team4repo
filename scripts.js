@@ -221,7 +221,11 @@ $(function(){
             "name": "John Smith"
         }
     ]
-   
+    //Adds a thank you when submitting form on contact page
+    $("#commentSubmit").on('click', function(){
+        let customer = $("#name").val();
+        $("#thanks").html("<h2>Thank you "+customer+" for your feedback</h2>")
+    })
    
     // --- Product Search Functionality
     $("#sub").on("click", function(){
