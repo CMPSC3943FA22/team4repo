@@ -889,7 +889,6 @@ nav li a:hover{
 #contact{
     display: flex;
     margin-top: 100px;
-    margin-bottom: 20px;
     justify-content: space-around;
     text-align: center;
 }
@@ -899,6 +898,10 @@ nav li a:hover{
     border: 1px solid #49cc49;
 }
 
+#storeEmail:hover{
+    box-shadow: 10px 5px 5px #49cc49;
+}
+
 
 #storePhone{
     width: 30%;
@@ -906,10 +909,18 @@ nav li a:hover{
     text-align: center;
 }
 
+#storePhone:hover{
+    box-shadow: 10px 5px 5px #49cc49;
+}
+
 #storeAddress{
     width: 30%;
     border: 1px solid #49cc49;
     text-align: center;
+}
+
+#storeAddress:hover{
+    box-shadow: 10px 5px 5px #49cc49;
 }
 
 #message{
