@@ -889,6 +889,7 @@ nav li a:hover{
 #contact{
     display: flex;
     margin-top: 100px;
+    margin-bottom: 15px;
     justify-content: space-around;
     text-align: center;
 }
