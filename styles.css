@@ -935,3 +935,6 @@ nav li a:hover{
     display: flex;
     justify-content: center;
 }
+#emailList{
+    color:#49cc49
+}
