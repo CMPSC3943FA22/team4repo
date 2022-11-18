@@ -224,7 +224,12 @@ $(function(){
     //Adds a thank you when submitting form on contact page
     $("#commentSubmit").on('click', function(){
         let customer = $("#name").val();
-        $("#thanks").html("<h2>Thank you "+customer+" for your feedback</h2>")
+        let text = $("#comments").val();
+        if(text === ""){
+            $("#thanks").html("<h2 style='color:#49cc49'>Please enter a comment</h2>")
+        }else{
+            $("#thanks").html("<h2>Thank you "+customer+" for your feedback</h2>")
+        }
     })
    
     // --- Product Search Functionality
