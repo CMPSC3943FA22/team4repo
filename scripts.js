@@ -273,7 +273,7 @@ $(function(){
                             "<p id='prodDept'>&emsp;Dept: " +products[i].dept + "</p>" +
                             "<p id='prodPric'>&emsp;Price: $" + products[i].price + "</p>" +
                             "<p id='prodQty'>&emsp;Qty in Stock: " + products[i].qty + "</p>" +
-                            "<button id='addList"+j+"' value='' ><img src='/imgs/plus.png'></button>" +
+                            "<button id='addList"+j+"' value='' ><img src='imgs/plus.png'></button>" +
                         "</div>" +
                     "</div>"
                     );
