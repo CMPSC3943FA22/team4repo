@@ -292,9 +292,9 @@ $(function(){
             }
             j++;
         }
-        if($("#result").length == 0){
-            $("#resultList").append(
-                "<p style='color:red'>No matching items</p>"
+        if($("#result").children().length == 0){
+            $("#result").append(
+                "<p style='color:#49cc49;margin-left:20px;'>No matching items</p>"
             )
          }
         
