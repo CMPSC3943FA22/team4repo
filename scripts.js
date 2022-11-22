@@ -18,6 +18,38 @@ $(function(){
             "trending" : "false"
         },
         {
+            "name" : "Peaches",
+            "dept" : "Produce",
+            "price" : 1.77,
+            "qty" : "In Stock",
+            "img" : "imgs/peach.jpg",
+            "trending" : "false"
+        },
+        {
+            "name" : "Oranges",
+            "dept" : "Produce",
+            "price" : 1.50,
+            "qty" : "In Stock",
+            "img" : "imgs/oranges.jpg",
+            "trending" : "false"
+        },
+        {
+            "name" : "Red Grapes",
+            "dept" : "Produce",
+            "price" : 4.00,
+            "qty" : "In Stock",
+            "img" : "imgs/RedGrapes.jfif",
+            "trending" : "false"
+        },
+        {
+            "name" : "Green Grapes",
+            "dept" : "Produce",
+            "price" : 4.00,
+            "qty" : "In Stock",
+            "img" : "imgs/GreenGrapes.jfif",
+            "trending" : "false"
+        },
+        {
             "name" : "Carrots",
             "dept" : "Produce",
             "price" : 1.55,
@@ -31,6 +63,14 @@ $(function(){
             "price" : 4.99,
             "qty" : "In Stock",
             "img" : "imgs/broc.jpg",
+            "trending" : "false"
+        },
+        {
+            "name" : "Cauliflower",
+            "dept" : "Produce",
+            "price" : 4.99,
+            "qty" : "In Stock",
+            "img" : "imgs/cauli.png",
             "trending" : "false"
         },
         {
@@ -66,11 +106,51 @@ $(function(){
             "trending" : "false"
         },
         {
+            "name" : "Sargento Sharp Cheddar Cheese - 11 Slices",
+            "dept" : "Dairy",
+            "price" : 3.20,
+            "qty" : "In Stock",
+            "img" : "imgs/cheese.jpg",
+            "trending" : "false"
+        },
+        {
+            "name" : "Butter",
+            "dept" : "Dairy",
+            "price" : 3.50,
+            "qty" : 30,
+            "img" : "imgs/butter.jpg",
+            "trending" : "false"
+        },
+        {
+            "name" : "Sour Cream",
+            "dept" : "Dairy",
+            "price" : 1.60,
+            "qty" : 30,
+            "img" : "imgs/SourCream.jpg",
+            "trending" : "false"
+        },
+        {
+            "name" : "Yoplait Strawberry Yoyugrt - 24 Cups",
+            "dept" : "Dairy",
+            "price" : 11.98,
+            "qty" : "In Stock",
+            "img" : "imgs/yogurt.png",
+            "trending" : "false"
+        },
+        {
             "name" : "Digiorno Frozen Pizza",
             "dept" : "Frozen",
             "price" : 6.99,
             "qty" : 20,
             "img" : "imgs/dig.jpg",
+            "trending" : "false"
+        },
+        {
+            "name" : "Grape Uncrustables - 4 Pack",
+            "dept" : "Frozen",
+            "price" : 4.20,
+            "qty" : 20,
+            "img" : "imgs/Gruncrustables.jfif",
             "trending" : "false"
         },
         {
@@ -95,6 +175,38 @@ $(function(){
             "price" : 2.15,
             "qty" : 20,
             "img" : "imgs/frozbroc.jpg",
+            "trending" : "false"
+        },
+        {
+            "name" : "Good and Gather Frozen Mixed Vegetables",
+            "dept" : "Frozen",
+            "price" : 1.25,
+            "qty" : 20,
+            "img" : "imgs/MixedVeggies.jfif",
+            "trending" : "false"
+        },
+        {
+            "name" : "El Monterey Chimichange - Family Size",
+            "dept" : "Frozen",
+            "price" : 5.96,
+            "qty" : 20,
+            "img" : "imgs/chimichanga.png",
+            "trending" : "false"
+        },
+        {
+            "name" : "Tyson Crispy Chicken Strips",
+            "dept" : "Frozen",
+            "price" : 10.98,
+            "qty" : 20,
+            "img" : "imgs/ChickStrips.png",
+            "trending" : "false"
+        },
+        {
+            "name" : "Marie Callender's Chicken Pot Pie - 4 Pack",
+            "dept" : "Frozen",
+            "price" : 11.89,
+            "qty" : 20,
+            "img" : "imgs/potpie.jfif",
             "trending" : "false"
         },
         {
@@ -146,6 +258,30 @@ $(function(){
             "trending" : "true"
         },
         {
+            "name" : "Salted Crackers",
+            "dept" : "Dry Goods",
+            "price" : 3.25,
+            "qty" : 20,
+            "img" : "imgs/SaltedCrackers.jpg",
+            "trending" : "true"
+        },
+        {
+            "name" : "Unsalted Crackers",
+            "dept" : "Dry Goods",
+            "price" : 3.25,
+            "qty" : 20,
+            "img" : "imgs/UnsaltedCrackers.jpg",
+            "trending" : "true"
+        },
+        {
+            "name" : "Sara Lee Honey Wheat Bread",
+            "dept" : "Dry Goods",
+            "price" : 2.95,
+            "qty" : 20,
+            "img" : "imgs/bread.png",
+            "trending" : "true"
+        },
+        {
             "name" : "Dawn Dish Soap",
             "dept" : "Home Goods",
             "price" : 3.65,
@@ -178,6 +314,38 @@ $(function(){
             "trending" : "false"
         },
         {
+            "name" : "Fabreeze Air Spray",
+            "dept" : "Home Goods",
+            "price" : 3.24,
+            "qty" : 20,
+            "img" : "imgs/fabreeze.jfif",
+            "trending" : "false"
+        },
+        {
+            "name" : "Plastic Cutlery",
+            "dept" : "Home Goods",
+            "price" : 5.50,
+            "qty" : 20,
+            "img" : "imgs/cutlery.jpg",
+            "trending" : "false"
+        },
+        {
+            "name" : "Paper Plates - 45 Plates",
+            "dept" : "Home Goods",
+            "price" : 5.20,
+            "qty" : 20,
+            "img" : "imgs/paperplates.jpg",
+            "trending" : "false"
+        },
+        {
+            "name" : "Glad Trash Bags - 60 Bags",
+            "dept" : "Home Goods",
+            "price" : 11.98,
+            "qty" : 20,
+            "img" : "imgs/paperplates.jpg",
+            "trending" : "false"
+        },
+        {
             "name" : "Lean Ground Beef",
             "dept" : "Meat",
             "price" : 3.00,
@@ -186,11 +354,27 @@ $(function(){
             "trending" : "true"
         },
         {
+            "name" : "Ribeye",
+            "dept" : "Meat",
+            "price" : 15.00,
+            "qty" : "In Stock",
+            "img" : "imgs/ribeye.jfif",
+            "trending" : "true"
+        },
+        {
             "name" : "Ham",
             "dept" : "Meat",
             "price" : 4.00,
             "qty" : "In Stock",
             "img" : "imgs/ham.jpg",
+            "trending" : "true"
+        },
+        {
+            "name" : "Chicken Legs",
+            "dept" : "Meat",
+            "price" : 5.45,
+            "qty" : "In Stock",
+            "img" : "imgs/chicken.jpg",
             "trending" : "true"
         },
         {
@@ -208,6 +392,22 @@ $(function(){
             "qty" : "In Stock",
             "img" : "imgs/porkchop.jpg",
             "trending" : "false"
+        },
+        {
+            "name" : "Sausage",
+            "dept" : "Meat",
+            "price" : 4.40,
+            "qty" : "In Stock",
+            "img" : "imgs/sausage.jpg",
+            "trending" : "true"
+        },
+        {
+            "name" : "Bacon",
+            "dept" : "Meat",
+            "price" : 7.50,
+            "qty" : "In Stock",
+            "img" : "imgs/bacon.jpg",
+            "trending" : "true"
         }
     ];
     
