@@ -414,12 +414,32 @@ $(function(){
     let quotes = [
         {
             "quote": "I love spending my time at Rusty's!",
-            "name": "Diana King"
+            "name": "Ann Perkins"
         },
         {
             "quote": "I can get in and out, no problem!",
-            "name": "John Smith"
-        }
+            "name": "Ben Wyatt"
+        },
+        {
+            "quote": "They have the freshest produce around!",
+            "name": "April Ludgate"
+        },
+        {
+            "quote": "Friendliest staff!",
+            "name": "Dwight Schrute"
+        },
+        {
+            "quote": "They have everything I need!",
+            "name": "Angela Martin"
+        },
+        {
+            "quote": "Everything is so easy to find!",
+            "name": "Mike Scott"
+        },
+        {
+            "quote": "My kids love shopping here!",
+            "name": "Andy Dwyer"
+        },
     ]
     //Adds a thank you when submitting form on contact page
     $("#commentSubmit").on('click', function(){
@@ -565,5 +585,19 @@ $(function(){
         }
         j++;
     });
-    
+    //review slideshow
+function slideshow(){
+    let len = quotes.length-1;
+    for (let i = 0; i < quotes.length; i++) {
+        setTimeout(function timer() {          
+            $("#reviews").empty();
+            $("#reviews").append(
+                "<cite id='rev'>" + quotes[i].quote + "</cite><br>"+ 
+                "<cite id='author'>-" + quotes[i].name + "</cite>");
+        }, i * 5000);
+        
+    }
+      
+}
+ slideshow();
 })
