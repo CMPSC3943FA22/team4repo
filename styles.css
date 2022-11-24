@@ -939,3 +939,24 @@ nav li a:hover{
 #emailList{
     color:#49cc49
 }
+/*Reviews */
+#reviewHolder{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    
+    
+}
+#reviews {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    border: 1px solid #49cc49;
+    justify-content: center;
+    align-items: center;
+}
+
+#rev{
+    margin-left: 15px;
+}
