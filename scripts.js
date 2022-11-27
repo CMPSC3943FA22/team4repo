@@ -530,28 +530,6 @@ $(function(){
         
         
     })
-  
-
-
-    //--- Show shopping list array
-    $("#showList").on("click",function(){
-        let jsonList = localStorage.getItem("list");
-        let parsedList = JSON.parse(jsonList);
-        for(let i=0; i < parsedList.length; i++){
-            console.log(parsedList[i])
-        }
-        $("#shopList").empty();
-        for(let i of shoppingList){
-            
-            $('#shopList').append(
-                "<li>" + i +"</li>"
-            )
-        }
-        
-    })
-
-   
-
     
     // --- Home Page ---
 
