@@ -480,12 +480,17 @@ $(function(){
                     );
                     
                     //adds button that pushes that item to shopping list
-                $('#addList' + j).on('click', event => {
-                    let n = products[i].name;
-                    shoppingList.push(n);
-                    
-                    
-                })
+                    $('#addList' + j).on('click', event => {
+                        let n = products[i].name;
+                        if(shoppingList.includes(n)){
+                            console.log("exists");
+                        }else{
+                            shoppingList.push(n);
+                        }
+                        localStorage.setItem("list", JSON.stringify(shoppingList));
+                        
+                        
+                    })
                 
                     
             } else if(products[i].name.toLowerCase().includes(search.toLowerCase()) && d == ""){
@@ -505,7 +510,12 @@ $(function(){
                     //adds button that pushes that item to shopping list
                 $('#addList' + j).on('click', event => {
                     let n = products[i].name;
-                    shoppingList.push(n);
+                    if(shoppingList.includes(n)){
+                        console.log("exists");
+                    }else{
+                        shoppingList.push(n);
+                    }
+                    localStorage.setItem("list", JSON.stringify(shoppingList));
                     
                     
                 })
@@ -525,14 +535,22 @@ $(function(){
 
     //--- Show shopping list array
     $("#showList").on("click",function(){
+        let jsonList = localStorage.getItem("list");
+        let parsedList = JSON.parse(jsonList);
+        for(let i=0; i < parsedList.length; i++){
+            console.log(parsedList[i])
+        }
         $("#shopList").empty();
         for(let i of shoppingList){
-            console.log(i);
+            
             $('#shopList').append(
                 "<li>" + i +"</li>"
             )
         }
+        
     })
+
+   
 
     
     // --- Home Page ---
