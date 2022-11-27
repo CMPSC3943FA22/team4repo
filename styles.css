@@ -960,3 +960,13 @@ nav li a:hover{
 #rev{
     margin-left: 15px;
 }
+
+/*show list button */
+
+#redirect{
+    text-decoration: none;
+}
+
+#redirect:visited{
+    color: black;
+}
