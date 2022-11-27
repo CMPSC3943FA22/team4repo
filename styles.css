@@ -970,3 +970,24 @@ nav li a:hover{
 #redirect:visited{
     color: black;
 }
+
+/* List */
+#printedList{
+    list-style-type: square;
+    margin-left: 25px;
+    font-family: 'Garamond';
+    font-size: 25px;
+    
+}
+
+#printedList li{
+    margin-top: 5px;
+}
+
+#listHead{
+    margin-left: 20px;
+    text-decoration: underline;
+    font-family: 'Garamond';
+}
+
+
