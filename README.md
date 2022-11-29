@@ -19,5 +19,5 @@ The contact feature is incomplete. The form is setup and, when submitted, thanks
 
 ### About
 ----------
-This page tells the customer a little about Rusty's Neighborhood Grocery to hopefully build a deeper connection with them.
+This page tells the customer a little about Rusty's Neighborhood Grocery to hopefully build a deeper connection with them. Also contains a slideshow of customer reviews.
 
