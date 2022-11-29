@@ -476,7 +476,7 @@ $(function(){
                             "<button id='addList"+j+"' value='' ><img id='addListImg' src='imgs/plus.png'></button>" +
                         "</div>" +
                     "</div>"
-                   
+                    
                     );
                     
                     //adds button that pushes that item to shopping list
@@ -540,6 +540,7 @@ $(function(){
         let j = 0;
         let noOfTrendingItems = 0;
         for(let i in products){
+
             if (products[i].qty != 0) {
                 $("#itemslist").append(
                     "<div id='prodDisp'>" +
@@ -553,34 +554,50 @@ $(function(){
                             "<button id='addList"+j+"' value='' ><i class='fa fa-cart-plus'></i></button>" +
                         "</div>" +
                     "</div>"
-                    );
-
-                    // Adds items to trending items list - no more than 6
-                    if (products[i].trending == "true" && noOfTrendingItems != 6) {
-                        $("#trendingitemslist").append(
-                            "<div id='prodDisp'>" +
-                                "<div id='picWrap'>" +
-                                    "<img id='prodImg' src='" + products[i].img + "'>" + 
-                                "</div>" +
-                                '<div id=prodInfo">' +
-                                    "<p id='prodName'>" + products[i].name + "</p>" +
-                                    "<p id='prodDept'>" +products[i].dept + "</p>" +
-                                    "<p id='prodPric'>$" + products[i].price + "</p>" +
-                                    "<button id='addList"+j+"' value='' ><i class='fa fa-cart-plus'></i></button>" +
-                                "</div>" +
-                            "</div>"
-                            );
-                            noOfTrendingItems++;
-                    }
-                    //adds button that pushes that item to shopping list
+                );
+                
                 $('#addList' + j).on('click', event => {
                     let n = products[i].name;
-                    shoppingList.push(n); 
-                })
+                    if (shoppingList.includes(n)){
+                        console.log("exists");
+                    } else {
+                        shoppingList.push(n);
+                        localStorage.setItem("list", JSON.stringify(shoppingList));
+                    }
+                });
+                
+            // Adds items to trending items list - no more than 6
+                if (products[i].trending == "true" && noOfTrendingItems != 6) {
+                    $("#trendingitemslist").append(
+                        "<div id='prodDisp'>" +
+                            "<div id='picWrap'>" +
+                                "<img id='prodImg' src='" + products[i].img + "'>" + 
+                            "</div>" +
+                            '<div id=prodInfo">' +
+                                "<p id='prodName'>" + products[i].name + "</p>" +
+                                "<p id='prodDept'>" +products[i].dept + "</p>" +
+                                "<p id='prodPric'>$" + products[i].price + "</p>" +
+                                "<button id='addList"+j+"' value='' ><i class='fa fa-cart-plus'></i></button>" +
+                            "</div>" +
+                        "</div>"
+                    );
+                    noOfTrendingItems++;
+
+                    $('#addList' + j).on('click', event => {
+                        let n = products[i].name;
+                        if (shoppingList.includes(n)){
+                            console.log("exists");
+                        } else {
+                            shoppingList.push(n);
+                            localStorage.setItem("list", JSON.stringify(shoppingList));
+                        }                        
+                    })
+                }
             }
+            j++;
         }
-        j++;
     });
+
     //review slideshow
 function slideshow(){
     let len = quotes.length-1;
