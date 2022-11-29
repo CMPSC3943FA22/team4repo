@@ -28,7 +28,7 @@ $(function(){
         {
             "name" : "Oranges",
             "dept" : "Produce",
-            "price" : 1.50,
+            "price" : 1.55,
             "qty" : "In Stock",
             "img" : "imgs/oranges.jpg",
             "trending" : "false"
@@ -36,7 +36,7 @@ $(function(){
         {
             "name" : "Red Grapes",
             "dept" : "Produce",
-            "price" : 4.00,
+            "price" : 4.22,
             "qty" : "In Stock",
             "img" : "imgs/RedGrapes.jfif",
             "trending" : "false"
@@ -44,7 +44,7 @@ $(function(){
         {
             "name" : "Green Grapes",
             "dept" : "Produce",
-            "price" : 4.00,
+            "price" : 4.22,
             "qty" : "In Stock",
             "img" : "imgs/GreenGrapes.jfif",
             "trending" : "false"
@@ -108,7 +108,7 @@ $(function(){
         {
             "name" : "Sargento Sharp Cheddar Cheese - 11 Slices",
             "dept" : "Dairy",
-            "price" : 3.20,
+            "price" : 3.29,
             "qty" : "In Stock",
             "img" : "imgs/cheese.jpg",
             "trending" : "false"
@@ -116,7 +116,7 @@ $(function(){
         {
             "name" : "Butter",
             "dept" : "Dairy",
-            "price" : 3.50,
+            "price" : 3.52,
             "qty" : 30,
             "img" : "imgs/butter.jpg",
             "trending" : "false"
@@ -124,7 +124,7 @@ $(function(){
         {
             "name" : "Sour Cream",
             "dept" : "Dairy",
-            "price" : 1.60,
+            "price" : 1.69,
             "qty" : 30,
             "img" : "imgs/SourCream.jpg",
             "trending" : "false"
@@ -148,9 +148,9 @@ $(function(){
         {
             "name" : "Grape Uncrustables - 4 Pack",
             "dept" : "Frozen",
-            "price" : 4.20,
+            "price" : 4.37,
             "qty" : 20,
-            "img" : "imgs/Gruncrustables.jfif",
+            "img" : "imgs/uncrust.jpeg",
             "trending" : "false"
         },
         {
@@ -300,7 +300,7 @@ $(function(){
         {
             "name" : "Snuggle Dryer Sheets",
             "dept" : "Home Goods",
-            "price" : 4.00,
+            "price" : 4.15,
             "qty" : 20,
             "img" : "imgs/snug.jpg",
             "trending" : "false"
@@ -324,7 +324,7 @@ $(function(){
         {
             "name" : "Plastic Cutlery",
             "dept" : "Home Goods",
-            "price" : 5.50,
+            "price" : 5.55,
             "qty" : 20,
             "img" : "imgs/cutlery.jpg",
             "trending" : "false"
@@ -332,7 +332,7 @@ $(function(){
         {
             "name" : "Paper Plates - 45 Plates",
             "dept" : "Home Goods",
-            "price" : 5.20,
+            "price" : 5.29,
             "qty" : 20,
             "img" : "imgs/paperplates.jpg",
             "trending" : "false"
@@ -348,7 +348,7 @@ $(function(){
         {
             "name" : "Lean Ground Beef",
             "dept" : "Meat",
-            "price" : 3.00,
+            "price" : 3.49,
             "qty" : "In Stock",
             "img" : "imgs/ground.jpg",
             "trending" : "true"
@@ -356,7 +356,7 @@ $(function(){
         {
             "name" : "Ribeye",
             "dept" : "Meat",
-            "price" : 15.00,
+            "price" : 14.99,
             "qty" : "In Stock",
             "img" : "imgs/ribeye.jfif",
             "trending" : "true"
@@ -364,7 +364,7 @@ $(function(){
         {
             "name" : "Ham",
             "dept" : "Meat",
-            "price" : 4.00,
+            "price" : 4.59,
             "qty" : "In Stock",
             "img" : "imgs/ham.jpg",
             "trending" : "true"
@@ -380,7 +380,7 @@ $(function(){
         {
             "name" : "Turkey",
             "dept" : "Meat",
-            "price" : 6.00,
+            "price" : 6.67,
             "qty" : "In Stock",
             "img" : "imgs/turkey.jpg",
             "trending" : "true"
@@ -396,7 +396,7 @@ $(function(){
         {
             "name" : "Sausage",
             "dept" : "Meat",
-            "price" : 4.40,
+            "price" : 4.49,
             "qty" : "In Stock",
             "img" : "imgs/sausage.jpg",
             "trending" : "true"
@@ -404,7 +404,7 @@ $(function(){
         {
             "name" : "Bacon",
             "dept" : "Meat",
-            "price" : 7.50,
+            "price" : 7.56,
             "qty" : "In Stock",
             "img" : "imgs/bacon.jpg",
             "trending" : "true"
