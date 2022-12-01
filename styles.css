@@ -1009,3 +1009,42 @@ nav li a:hover{
     width: 30%;
 }
 
+
+.about-cont{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 33.333%;
+
+}
+
+.about-photo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-photo img{
+    border-radius: 180px;
+    border: 3px solid #49cc49;
+    opacity: .50;
+    background-color: gray;
+}
+
+.about-photo img:hover{
+    box-shadow: 0 0 0 2px #49cc49;
+    opacity: 1;
+}
+
+#founders{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+
+
+
