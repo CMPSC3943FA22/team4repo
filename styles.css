@@ -991,4 +991,19 @@ nav li a:hover{
     font-family: 'Garamond';
 }
 
+#slogan{
+    text-align: center;
+}
+
+#about-story{
+    display: flex;
+    justify-content: space-around;
+    border-top: .5px solid #49cc49;
+    border-bottom: .5px solid #49cc49;
+    padding: 15px 0;
+}
+
+.story{
+    width: 30%;
+}
 
